@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Places Book</title>
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <h1>Places Book</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <hr>
+        <h2>Add a Place:</h2>
+        <form id="addPlace">
+          <div class="form-group">
+            <input type="text"  class="form-control" id="placeName" placeholder="Name of Place">
+          </div>
+          <div class="form-group">
+            <select id="timeOfYear" class="form-control"> 
+              <option selected disabled value="">Choose Time of Year</option>
+              <option value="winter">Winter</option>
+              <option value="spring">Spring</option>
+              <option value="summer">Summer</option>
+              <option value="fall">Fall</option>
+            </select> 
+          </div>
+          <div class="form-group">
+            <input type="text"  class="form-control" id="favoriteFood" placeholder="Favorite Food">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="description" placeholder="Type Description of Place Here" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Add Place</button>
+        </form>
+        <hr>
+        <h2>Places I Have Been!</h2>
+        <ul id="placeOutput">
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="show-output">
+          <p>Place Name: <span class="placeOutput"></span></p>
+          <p>Time of Year: <span class="timeOfYearOutput"></span></p>
+          <p>Favorite Food: <span class="foodOutput"></span></p>
+          <p>Description: <span class="description"></span></p>
+          <div id="buttons">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
